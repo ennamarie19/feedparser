@@ -14,9 +14,7 @@ def TestOneInput(data):
     temp_file = tempfile.NamedTemporaryFile()
     temp_file.write(file_data)
     temp_file.flush()
-    temp_file.name = "test" + ".xml"
-    feedparser.parse(temp_file)
-
+    feedparser.parse(temp_file.name)
 
 
 def main():
