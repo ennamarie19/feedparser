@@ -6,7 +6,7 @@ import sys
 import io
 import random
 
-with atheris.instrument_imports():
+with atheris.instrument_imports(include=['feedparser']):
     import feedparser
 
 def TestOneInput(data):
